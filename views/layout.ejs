@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT Center</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <!-- <link rel="stylesheet" href="/css/bootstrap-icons.css"> -->
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+    
+    <div>
+        <%- include('parcial/navbar') %>
+    </div>
+
+    <div class="container mt-5">
+        <% if (error.length !== 0) { %>
+        <% error.forEach(err => { %>
+            <div class="alert alert-danger text-center"><%= err %></div>
+        <% }) } %>
+
+        <% if (succ.length !== 0) { %>
+            <div class="alert alert-success text-center"><%= succ %> <a href="/signin">SignIn</a></div>
+        <% } %>
+    </div>
+
+    <div class="container-fluid">
+        <%- body %>
+    </div>
+
+    <%- include('parcial/footer') %>
+    
+    <script src="/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

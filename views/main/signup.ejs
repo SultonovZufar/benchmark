@@ -1,0 +1,26 @@
+<div class="text-center fw-bold fs-1"><%= data %></div>
+
+<form action="/signup" method="post" class="container" style="width: 50%;">
+    <hr>
+    <div class="mb-3">
+        <div class="form-floating mb-3">
+            <input name="name" type="name" class="form-control" id="floatingName" placeholder="Name">
+            <label for="floatingName">Name</label>
+        </div>
+        <div class="form-floating mb-3">
+            <input name="sure" type="sure" class="form-control" id="floatingSure" placeholder="Surename">
+            <label for="floatingSure">Surename</label>
+        </div>
+        <div class="form-floating mb-3">
+            <input name="email" type="email" class="form-control" id="floatingEmail" placeholder="Email">
+            <label for="floatingEmail">Email</label>
+        </div>
+        <div class="form-floating">
+            <input name="pass" type="password" class="form-control" id="floatingPassword" placeholder="Password">
+            <label for="floatingPassword">Password</label>
+        </div>
+    </div>
+    <div>
+        <button type="submit" class="btn btn-info text-white">Send</button>
+    </div>
+</form>

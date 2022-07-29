@@ -1,0 +1,34 @@
+<div class="text-center fw-bold fs-1"><%= data %></div>
+<div class="text-center fs-1 mt-5">
+    <table class="table table-dark table-striped">
+        <tbody>
+            <tr>
+                <td class="text-secondary" colspan="2">Your Info</td>
+            </tr>
+            <tr>
+                <td class="text-warning">IP</td>
+                <td><%= ip %></td>
+            </tr>
+            <tr>
+                <td class="text-warning">Country</td>
+                <td><%= geo.country %></td>
+            </tr>
+            <tr>
+                <td class="text-warning">City</td>
+                <td><%= geo.city %></td>
+            </tr> 
+            <tr>
+                <td class="text-warning">Timezone</td>
+                <td><%= geo.timezone %></td>
+            </tr>
+            <tr>
+                <td class="text-warning">Lat - Long</td>
+                <td><%= geo.ll %></td>
+            </tr>
+            <tr>
+                <td class="text-warning">OS</td>
+                <td><%= extra[0] %>)</td>
+            </tr>              
+        </tbody>
+    </table>
+</div>
